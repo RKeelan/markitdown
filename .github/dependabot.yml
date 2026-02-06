@@ -3,4 +3,20 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
+      time: "05:00"
+  - package-ecosystem: "pip"
+    directory: "/packages/markitdown"
+    schedule:
+      interval: "daily"
+      time: "05:00"
+  - package-ecosystem: "pip"
+    directory: "/packages/markitdown-mcp"
+    schedule:
+      interval: "daily"
+      time: "05:00"
+  - package-ecosystem: "pip"
+    directory: "/packages/markitdown-sample-plugin"
+    schedule:
+      interval: "daily"
+      time: "05:00"
