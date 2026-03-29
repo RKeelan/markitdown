@@ -3,20 +3,32 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
-      time: "05:00"
+      interval: "weekly"
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"
   - package-ecosystem: "pip"
     directory: "/packages/markitdown"
     schedule:
-      interval: "daily"
-      time: "05:00"
+      interval: "weekly"
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"
   - package-ecosystem: "pip"
     directory: "/packages/markitdown-mcp"
     schedule:
-      interval: "daily"
-      time: "05:00"
+      interval: "weekly"
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"
   - package-ecosystem: "pip"
     directory: "/packages/markitdown-sample-plugin"
     schedule:
-      interval: "daily"
-      time: "05:00"
+      interval: "weekly"
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"
